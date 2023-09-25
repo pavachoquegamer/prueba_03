@@ -24,4 +24,4 @@ jobs:
         
   reciclado:
    if: ${{ github.ref == 'refs/heads/desarrollo' }}
-   uses: ./.pavachoquegamer/prueba_03/.github.com/pavachoquegamer/prueba_03/blob/master/.github/workflows/main.yml
+   uses: ./.github/workflows/main.yml
