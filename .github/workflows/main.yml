@@ -1,8 +1,8 @@
-name: CI-CD-legados-java-avicena-servicioswebhc-ws-col
+name: prueba_03
 # 28_02_2023 
 on: 
   push:
-   branches:  [ master, desarrollo, qa, preproduccion ]
+   branches:  [ main, desarrollo ]
 
 jobs:
   build_nube:
