@@ -1,0 +1,35 @@
+name: CI-CD-legados-java-avicena-servicioswebhc-ws-col
+# 28_02_2023 
+on: 
+  push:
+   branches:  [ master, desarrollo, qa, preproduccion ]
+
+jobs:
+  build_nube:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    
+    steps:
+      
+     - uses: actions/checkout@v2
+    
+     - name: Ejecuta el script de compilacion 
+       run: |
+         ls -la
+         echo "Master"
+
+                
+        
+  rama_qa:
+    if: ${{ github.ref == 'refs/heads/desarrollo' }}  
+    runs-on: ubuntu-latest
+    
+    steps:
+      
+     - uses: actions/checkout@v2
+    
+     - name: Ejecuta el script de compilacion 
+       run: |
+         ls -la
+         echo "desarrollo"
+        
