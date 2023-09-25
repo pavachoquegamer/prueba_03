@@ -5,7 +5,7 @@ on:
    branches:  [ master, desarrollo ]
 
 jobs:
-  build_nube:
+  master:
     if: ${{ github.ref == 'refs/heads/master' }}
     runs-on: ubuntu-latest
     
@@ -16,11 +16,13 @@ jobs:
      - name: Ejecuta el script de compilacion 
        run: |
          ls -la
+         echo "======================"
          echo "Master"
+         echo "======================"
 
                 
         
-  rama_qa:
+  desarrollo:
     if: ${{ github.ref == 'refs/heads/desarrollo' }}  
     runs-on: ubuntu-latest
     
@@ -31,5 +33,7 @@ jobs:
      - name: Ejecuta el script de compilacion 
        run: |
          ls -la
+         echo "======================"
          echo "desarrollo"
+         echo "======================"
         
